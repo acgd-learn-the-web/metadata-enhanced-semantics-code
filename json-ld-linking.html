@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>JSON-LD Linking</title>
+</head>
+<body>
+
+  <!-- Must be represented in the HTML -->
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "Branding for Dino ’R’ Us",
+      "author": {
+        "@type": "Person",
+        "@id": "#thomasjbradley"
+      },
+      "image": "https://thomasjbradley.ca/images/dinos-r-us-logo.jpg",
+      "url": "https://thomasjbradley.ca/dino-r-us/",
+      "dateCreated": "2017-11-23",
+      "description": "A massive rebrand for the Dinos ’R’ Us company.",
+      "keywords": "dinosaurs, graphic, design, brand, logo"
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": "#thomasjbradley",
+      "name": "Thomas J Bradley",
+      "url": "https://thomasjbradley.ca",
+      "image": "https://thomasjbradley.ca/img/thomasjbradley.jpg",
+      "description": "Professor of The Open Web in the Graphic Design program at Algonquin College",
+      "address": {
+        "@type": "PostalAddress",
+        "name": "Algonquin College",
+        "streetAddress": "1385 Woodroffe Ave.",
+        "addressLocality": "Ottawa",
+        "addressRegion": "ON",
+        "addressCountry": "CA",
+        "postalCode": "K2G 1V8"
+      },
+      "birthDate": "1982-10-28",
+      "children": [
+        {
+          "@type": "Person",
+          "name": "Edith Bradley"
+        }
+      ],
+      "email": "hey@thomasjbradley.ca",
+      "jobTitle": "Professor"
+    }
+  </script>
+
+</body>
+</html>
